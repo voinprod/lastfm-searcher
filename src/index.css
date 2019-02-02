@@ -12,3 +12,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.list-group{
+  max-height: 350px;
+  overflow-y: scroll;
+}
+.music-item{
+  color:#000;
+  font-size: 12px;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.b-music_item{
+  padding: 25px;
+  display: flex;
+  align-items: center;
+}
