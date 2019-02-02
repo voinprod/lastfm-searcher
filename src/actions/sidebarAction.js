@@ -4,6 +4,7 @@ export const ADD_TOP_SUCCESS = 'ADD_TOP_SUCCESS'
 export const ADD_TOP_FAILURE = 'ADD_TOP_FAILURE'
 export const LOAD_MORE = 'LOAD_MORE'
 
+// use more methods 
 
 export const addTop = () => {
     return dispatch => {

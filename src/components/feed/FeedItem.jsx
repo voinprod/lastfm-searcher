@@ -1,15 +1,21 @@
 import React from 'react'
 
 
-const FeedItem = () => {
+const FeedItem = ({ tracks }) => {
+
     return (
-        <div className="card">
-            <h5 className="card-header">Featured</h5>
-            <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            </div>
-        </div>
+        <React.Fragment>
+            {tracks && tracks['track'].map(track => <div className="card mt-3">
+                <h5 className="card-header"><span className="trackName">Track name:</span> {track.name}</h5>
+                <div className="card-body">
+                    <img src={track.image[1]['#text']} className="rounded mr-3" alt="" />
+                    <div>
+                        <h5 className="card-title">{track.artist}</h5>
+                        <p className="card-text"><a href={track.url}>Link</a></p>
+                    </div>
+                </div>
+            </div>)}
+        </React.Fragment>
     )
 }
 

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './App.css'
-import Search from './components/Search'
+import Search from './containers/SearchContainer'
 import Sidebar from './containers/Sidebar'
-import Feed from './components/feed/Feed'
+import Feed from './containers/FeedContainer'
 class App extends Component {
   render() {
     return (

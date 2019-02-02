@@ -30,3 +30,17 @@ code {
   display: flex;
   align-items: center;
 }
+.card{
+  font-size: 12px;
+}
+.trackName{
+  color:#3ca732;
+}
+.card-body{
+  display: flex;
+  align-items: center;
+}
+.trackList{
+  overflow-y: scroll;
+  max-height: 600px;
+}
